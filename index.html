@@ -3,17 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joe's Projects for Pharetra AI</title>
+    <title>Joseph Barney - Technical Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
-        .button { display: inline-block; margin: 10px; padding: 10px 20px; 
-                  background-color: #0056b3; color: white; text-decoration: none; 
-                  border-radius: 5px; }
+        :root {
+            --navy: #1a2b4c;
+            --gold: #c4a45d;
+            --light-gray: #f5f5f5;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: #333;
+        }
+        
+        .header {
+            background-color: var(--navy);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            color: var(--gold);
+            font-size: 2.5rem;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: var(--navy);
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-card h3 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+        
+        .project-card p {
+            margin-bottom: 1rem;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--navy);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .button:hover {
+            background-color: var(--navy);
+            color: var(--gold);
+        }
+        
+        .links {
+            margin-top: 1rem;
+        }
+        
+        .links a {
+            margin-right: 1rem;
+            color: var(--navy);
+        }
     </style>
 </head>
 <body>
-    <h1>Joes Projects for Pharetra AI</h1>
-    <a href="https://nbcodes.netlify.app" class="button">NBCodes Application</a>
-    <a href="#" class="button">Weights and Measures (Coming Soon)</a>
+    <div class="header">
+        <h1>Joseph Barney</h1>
+        <p>Technical Professional | Process Innovator | AI Integration Specialist</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I'm a versatile professional with experience in compliance, operations analysis, and technical innovation. I specialize in creating practical solutions that bridge regulatory requirements with modern technology, particularly focusing on AI integration and process automation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>New Bedford Municipal Code Search</h3>
+                <p>An AI-augmented search platform for city codes and regulations. Integrates Claude.AI for intelligent interpretation and interactive discussions about municipal regulations.</p>
+                <p><strong>Technical Stack:</strong> Python, Flask, React, Claude API, Web Scraping</p>
+                <div class="links">
+                    <a href="https://nbcodes.netlify.com" class="button">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+    <h3>Weights & Measures Management System</h3>
+    <p>A comprehensive application leveraging advanced Claude.AI features to revolutionize weights and measures operations. Implements cutting-edge prompt caching for efficient AI interactions, demonstrating early adoption of Anthropic's beta features.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+        <li>Integrated Claude.AI for contextual understanding of complex regulations</li>
+        <li>Implemented prompt caching beta feature for optimized response times</li>
+        <li>Built custom knowledge base from Massachusetts regulations</li>
+        <li>Developed as self-initiated solution to modernize department operations</li>
+    </ul>
+    <p><strong>Technical Stack:</strong> Python, Flask, React, Claude API (with beta features), PDF Processing, Custom Caching System</p>
+    <div class="links">
+        <a href="https://nbwm.netlify.com" class="button">Live Demo</a>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <p>Currently serving as Compliance Officer (Sealer of Weights and Measures) for the City of New Bedford, where I've implemented technical solutions to streamline operations and improve service delivery.</p>
+            <p>Previous experience includes operations analysis at Covanta, managing complex billing systems and process optimization for multi-million dollar operations.</p>
+            <div class="links">
+                <a href="https://github.com/joe02740/nbcodes-landing/blob/main/resume.pdf" class="button">View Full Resume</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
